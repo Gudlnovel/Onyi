@@ -1,2 +1,0 @@
-# Onyi
-For a friend 
