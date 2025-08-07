@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>shimah's Surprise Packages</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #333;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #4a2c00;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #5a3d00;
+      margin-top: 0.5rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background-color: #fff8e1;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .service-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #bf7300;
+    }
+    .service-card p {
+      font-size: 1rem;
+      color: #5a3d00;
+    }
+    .service-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      margin-top: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+    .button-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #ff9100;
+      color: white;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+    .button-link:hover {
+      background-color: #e07a00;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #5a3d00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>shimah's Surprise Packages</h1>
+    <p>Make every moment unforgettable</p>
+  </header>
+
+  <section class="services">
+    <div class="service-card" onclick="showDetails('Room Decorations')">
+      <h2>Room Decorations</h2>
+      <p>Perfect for birthdays, anniversaries, and surprise events.</p>
+      <img src="https://i.postimg.cc/d17r75kn/IMG-20250804-WA0071.jpg" alt="Room Decoration Image">
+    </div>
+
+    <div class="service-card" onclick="showDetails('Food Tray')">
+      <h2>Food Tray</h2>
+      <p>Beautifully arranged food trays for any occasion.</p>
+      <img src="https://i.postimg.cc/QxSmLpNh/IMG-20250804-WA0073food.jpg" alt="Food Tray Image">
+    </div>
+
+    <div class="service-card" onclick="showDetails('Money Bouquet')">
+      <h2>Money Bouquet</h2>
+      <p>Wow your loved ones with creative cash flower bouquets.</p>
+      <img src="https://i.postimg.cc/nLT5FcLC/IMG-20250804-WA0070mone.jpg" alt="Money Bouquet Image">
+    </div>
+
+    <div class="service-card" onclick="showDetails('Flower Bouquet')">
+      <h2>Flower Bouquet</h2>
+      <p>Elegant and fresh floral arrangements for gifting.</p>
+      <img src="https://i.postimg.cc/gjsJJcrL/IMG-20250804-WA0072-3flo.jpg" alt="Flower Bouquet Image">
+    </div>
+  </section>
+
+  <div style="text-align:center; margin-top:2rem;">
+    <a href="https://wa.me/2347076265203?text=Hello%20I%20am%20interested%20in%20your%20services" target="_blank" class="button-link">
+      Click here to get yours via WhatsApp
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 shimah's Surprise Packages. All rights reserved.
+  </footer>
+
+  <script>
+    function showDetails(service) {
+      alert("You clicked on: " + service + "\nContact us to book your surprise today!");
+    }
+  </script>
+</body>
+</html>
